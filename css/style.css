@@ -1,0 +1,157 @@
+*,* ::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: -webkit-linear-gradient(left , silver, #2e2e2e);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+   width: 75px;
+}
+.gallery-image {
+   width: 200px;
+   height: 200px;
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+}
+.thumbnail{
+   width: 100px;
+   height: 100px;
+   /* background-image: ; */
+   background-size: contain;
+   
+}
+
+.index{
+    background-color: #ffffff;
+    /* width: 500px; */
+    height: 300px;
+    margin: auto;
+    margin-top: 20%;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    text-align: center;
+    border-radius: 9px;
+    /* position: relative; */
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login{
+    width: 60%;
+    margin: auto;
+    margin-top: 18%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+input{
+
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    /* border-bottom: 1px; */
+    text-align: center;
+}
+
+button{
+    border: #ffffff;
+    border-radius: 11px;
+    padding: 10px 20px;
+    /* font-size: 15px; */
+    display: inline-block;
+}
+
+.menu-btn {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    background-color: silver;
+    color: white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 100%;
+ }
+ .dropdown-menu {
+    position: relative;
+    display: inline-block;
+ }
+ .menu-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #666868;
+    min-width: 160px;
+    z-index: 1;
+ }
+ nav{
+    background-color: black;
+    width: 100%;
+ }
+ .links,.links-hidden{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+ }
+ .links-hidden:hover,.links:hover {
+    background-color: silver;
+ }
+ .dropdown-menu:hover .menu-content {
+    display: block;
+ }
+ .dropdown-menu:hover .menu-btn {
+    background-color: silver;
+ }
+ .hamburger {
+    color: white;
+    font-weight: bolder;
+    display: none;
+ }
+ @media screen and (max-width: 880px) {
+       nav a:not(:first-child) {
+       display: none;
+    }
+    nav a.hamburger {
+       float: right;
+       display: block;
+       padding: 12px;
+    }
+    .dropdown-menu{
+       display: none;
+    }
+    nav.openNav a.hamburger {
+       position: relative;
+    }
+    nav.openNav a {
+       float: none;
+       display: block;
+       text-align: center;
+    }
+ }
+ nav.openNav div.dropdown-menu{
+    display: block;
+    width: 100%;
+ }
