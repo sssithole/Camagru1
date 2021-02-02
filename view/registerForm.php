@@ -17,9 +17,7 @@
         <!-- <div class="red-text">?php echo $error['password']; ?></div> -->
         e-mail<input type="email" name="email"><br>
         password<input type="password" name="password"><br>
-        <div class="red-text">
-            <?php echo ($errors !== null)?'<p> ' . $errors . '</p>':null; ?>
-        </div>
+        
         <button type="submit" name="register">REGISTER</button><br>
         <br>if already have an account<a href='loginForm.php'><button type="button" >login</button></a> 
         </form>

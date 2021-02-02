@@ -15,8 +15,8 @@
     <video id="video" autoplay></video>
     <canvas id="canvas" width="500" height="400"></canvas>
     <div id="canvasy">
-        <img src="flag1.jpg" alt="USA" id="flag1"/>
-        <img src="flag2.jpg" alt="GER" id="flag2" />
+        <img src="../model/stickers/flag1.jpg" alt="USA" id="flag1"/>
+        <img src="../model/stickers/flag2.jpg" alt="GER" id="flag2" />
     </div>
     <button id="Snap" onclick="Snap()">Capture</button> 
     <button class ="primary-button" name="UploadImage" id="upload">Upload A Photo</button>

@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['upload'])){
     session_start();
-    var_dump($_SESSION);
+    // var_dump($_SESSION);
 
     include_once ('../config/setup.php');
     include_once ('../config/database.php');

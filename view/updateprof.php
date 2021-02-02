@@ -16,7 +16,7 @@ var_dump($_SESSION)
         <a class="links" href="home.php" class="logo">Camagru</a>
     </nav>
 
-    <form action="../control/updateuser.php" method="$_POST">
+    <form action="../control/updateuser.php" method="POST">
         username<input type="text" name="username" required><br>
         e-mail<input type="email" name="email" required><br>
         password<input type="password" name="password" required><br>
